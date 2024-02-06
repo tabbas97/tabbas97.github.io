@@ -10,7 +10,9 @@
 <CommonPage {title}>
 	<div class = "resume">
 		{#if item}
-			<Chip size={'1.25em'}>Download</Chip>
+			<a href = {item} download = "Thameem_Generic_Resume.pdf">
+				<Chip size={'1.25em'}>Download</Chip>
+			</a>
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>
 		{/if}
