@@ -1,5 +1,8 @@
-# Slick Portfolio With Svelte.
+# Personal Portfolio Website - Thameem Abbas Ibrahim Bathusha
 
+Built on top of the template from : https://github.com/RiadhAdrani/slick-portfolio-svelte?ref=sveltethemes.dev
+
+## For anyone trying to build on top of mine:
 Vercel-like style portfolio template for developers.
 
 If you want to use the template as it is, you can :
