@@ -11,9 +11,9 @@
 <CommonPage {title}>
 	<div class = "resume">
 		{#if item}
-			<a href = {item}>
+			<a href = {item} target="_blank">
 				<Chip size={'1.25em'}>Download</Chip>
-				
+
 			</a>
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>
