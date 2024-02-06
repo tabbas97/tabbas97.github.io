@@ -81,7 +81,7 @@
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
 				<div class="px-10px m-y-5">
 					{#if data.project.description}
-						<Markdown content={data.project.description} />
+						<Markdown content={data.project.shortDescription} />
 					{:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />
@@ -91,6 +91,11 @@
 				</div>
 				<div class="w-100% m-t-8">
 					<CardDivider />
+				</div>
+				<div style="width: 100%" class="m-t-8">
+					{#each data.project.description as desc}
+						<Markdown content={desc} />
+					{/each}
 				</div>
 				{#if screenshots.length > 0}
 					<div

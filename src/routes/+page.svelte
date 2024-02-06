@@ -8,7 +8,7 @@
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 
-	const { description, lastName, links, name, title, skills } = HOME;
+	const { descMultiline, description, lastName, links, name, title, skills } = HOME;
 
 	const isEmail = (email: string): boolean => {
 		const reg =
@@ -25,10 +25,15 @@
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
 >
 	<div class="md:flex-1 gap-10px">
-		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
-		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
+		<MainTitle classes="md:text-left ">{name} {lastName}</MainTitle>
+		<div class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
+			{#each descMultiline as desc}
+				<p>- {desc}</p>
+			{/each}
+		</div>
+		<!-- <p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
-		</p>
+		</p> -->
 		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
 			{#each links as link}
 				<a

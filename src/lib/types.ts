@@ -7,7 +7,8 @@ export enum Platform {
 	Linkedin = 'linkedin',
 	Email = 'email',
 	Facebook = 'facebook',
-	Youtube = 'youtube'
+	Youtube = 'youtube',
+	Medium = 'medium'
 }
 
 export type Icon = `i-${string}-${string}`;
@@ -28,7 +29,7 @@ export interface Item {
 	name: string;
 	logo: Asset;
 	shortDescription: string;
-	description: string;
+	description: Array<string>;
 	screenshots?: Array<{ src: string; label: string }>;
 }
 
@@ -42,7 +43,8 @@ export interface IconLink extends Link {
 	icon: Asset;
 }
 
-export interface Skill extends Omit<Item, 'shortDescription'> {
+export interface Skill extends Item {
+// export interface Skill extends Omit<Item, 'description'> {
 	color: string;
 }
 
@@ -91,6 +93,7 @@ export interface HomePageParams extends PageParams {
 	name: string;
 	lastName: string;
 	description: string;
+	descMultiline: Array<string>;
 	links: Array<HomeLink>;
 	skills?: Array<Skill>;
 }

@@ -14,7 +14,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'The Portfolio of Thameem Abbas';
 
 export const NavBar = {
 	home: 'Home',
@@ -41,41 +41,52 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 			return Icons.Twitter;
 		case Platform.Youtube:
 			return Icons.Youtube;
+		case Platform.Medium:
+			return Icons.Medium;
 	}
 };
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Thameem Abbas',
+	lastName: 'Ibrahim Bathusha',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		"Computer Science graduate from Northeastern University with a strong foundation in Machine Learning and Cloud Computing. " +
+		"My professional journey is marked by specialized roles in Machine Learning and Computer Vision at Multicoreware Inc. I have a proven track record in enhancing computer vision models, achieving significant efficiency in memory and computational resources. At HuBe.ai, my work involved developing advanced machine learning algorithms for a scalable, high-performance SaaS platform. Proficient in Python, C++, and various machine learning frameworks, I'm adept in both theoretical aspects and practical implementations of machine learning. My experience encompasses working with cloud services like AWS and GCP, making me well-equipped for roles that require deep technical expertise in delivering machine learning and computer vision beyond the confines of on-device compute.",
+	descMultiline: [
+		"Computer Science graduate from Northeastern University with a strong foundation in Machine Learning and Cloud Computing.",
+		"Specialized in Machine Learning and Computer Vision at Multicoreware Inc., enhancing model efficiency.",
+		"Developed advanced machine learning algorithms for HuBe.ai's scalable SaaS platform.",
+		"Proficient in Python, C++, and machine learning frameworks, with a strong grasp of theoretical and practical aspects.",
+		"Experienced with AWS and GCP cloud services, suitable for roles demanding expertise in machine learning and computer vision."
+	],
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/tabbas97' },
+		{ platform: Platform.Medium, link: 'https://tabbas97.medium.com/' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
+			link: 'https://www.linkedin.com/in/thameemabbas'
 		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
+		// {
+		// 	platform: Platform.Twitter,
+		// 	link: 'https://twitter.com/'
+		// },
+		// {
+		// 	platform: Platform.StackOverflow,
+		// 	link: 'https://stackoverflow.com/'
+		// },
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
+			link: 'tabbas97@gmail.com'
 		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
+		// {
+		// 	platform: Platform.Youtube,
+		// 	link: 'https://www.youtube.com'
+		// },
+		// {
+		// 	platform: Platform.Facebook,
+		// 	link: 'https://www.facebook.com'
+		// }
 	]
 };
 
@@ -96,7 +107,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: ''
+	item: 'https://drive.google.com/file/d/1-jGgy9gtDiY3Q5Fl3n4m61zCY3sxMuTf/view?usp=drive_link'
 };
 
 export const SEARCH: SearchPageParams = {

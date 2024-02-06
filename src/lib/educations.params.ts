@@ -3,27 +3,32 @@ import type { Education } from './types';
 
 export const MY_EDUCATIONS: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
-	},
-	{
-		degree: 'PhD of Computer Science',
-		description: '',
+		degree: 'Master of Science in CS',
+		description: [''],
 		location: 'USA',
-		logo: Assets.Unknown,
+		logo: Assets.northEastern,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'Northeastern University - Khoury College of Computer Sciences',
+		period: { from: new Date(2022, 5, 1), to : new Date(2024, 5, 1)},
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		subjects: [
+			'Machine Learning', 'Algorithms', 
+			'Building Scalable Distributed Systems', 'Cloud Computing', 
+			'Mobile App Development', 'Programming Design Paradigms',
+			'Web Development', 'DBMS'
+		]
+	},
+	{
+		degree: 'Bachelor of Engineering in Electrical and Electronics',
+		description: [''],
+		location: 'India',
+		logo: Assets.psgTech,
+		name: '',
+		organization: 'PSG College of Technology',
+		period: { from: new Date(2014, 7, 1), to: new Date(2019, 7, 1) },
+		shortDescription: 'Emphasis on Computer Science and Engineering',
+		slug: 'dummy-education-item',
+		subjects: ['Digital Signal Processing', 'Linear Algebra', 'Probability', 'Statistics', 'Python', 'C++', 'Data Structures', 'Algorithms', 'English']
 	}
 ];

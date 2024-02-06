@@ -22,7 +22,7 @@
 			(it) =>
 				it.name.toLowerCase().includes(query) ||
 				it.company.toLowerCase().includes(query) ||
-				it.description.toLowerCase().includes(query)
+				it.shortDescription.toLowerCase().includes(query)
 		);
 	};
 </script>
