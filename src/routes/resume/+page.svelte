@@ -5,11 +5,11 @@
 	// import PdfViewer from 'svelte-pdf';
 
 	const { item, title } = RESUME;
+	console.log(item);
 </script>
 
 <CommonPage {title}>
 	<div class = "resume">
-		console.log(item);
 		{#if item}
 			<a href = {item} download = "Thameem_Generic_Resume.pdf">
 				<Chip size={'1.25em'}>Download</Chip>
