@@ -9,6 +9,7 @@
 
 <CommonPage {title}>
 	<div class = "resume">
+		console.log(item);
 		{#if item}
 			<a href = {item} download = "Thameem_Generic_Resume.pdf">
 				<Chip size={'1.25em'}>Download</Chip>
