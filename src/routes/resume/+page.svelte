@@ -2,7 +2,7 @@
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
 	import { RESUME } from '$lib/params';
-	import PdfViewer from 'svelte-pdf';
+	// import PdfViewer from 'svelte-pdf';
 
 	const { item, title } = RESUME;
 </script>
@@ -15,17 +15,14 @@
 			<Chip>Ooops! no CV at the moment.</Chip>
 		{/if}
 	</div>
-	<div class="resume">
+	<!-- <div class="resume">
 		{#if item}
-			<!-- <a href={item}>
-				<Chip size={'1.25em'}>Download</Chip>
-			</a>
-			<br/> -->
+
 			<PdfViewer data = "" url = '../../Resume_Thameem_Generic.pdf' />
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>
 		{/if}
-	</div>
+	</div> -->
 </CommonPage>
 
 <style lang="scss">
