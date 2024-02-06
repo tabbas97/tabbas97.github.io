@@ -11,7 +11,7 @@
 <CommonPage {title}>
 	<div class = "resume">
 		{#if item}
-			<a href = {item} download = "Thameem_Generic_Resume.pdf">
+			<a href = {item}>
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}
