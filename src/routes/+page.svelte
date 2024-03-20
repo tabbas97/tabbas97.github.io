@@ -52,7 +52,7 @@
 		<br/>
 		<div
 			id = "credly-badge"
-			data-iframe-width="150"
+			data-iframe-width="220"
 			data-iframe-height="270"
 			data-share-badge-id="153aeded-485d-4ded-8a71-2df11a5fddac"
 			data-share-badge-host="https://www.credly.com"
