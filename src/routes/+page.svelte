@@ -47,5 +47,16 @@
 			{/each}
 		</div>
 	</div>
-	<Carrousel items={skills ?? MY_SKILLS} />
+	<div class = "md:text-center gap-10px">
+		<Carrousel items={skills ?? MY_SKILLS} />
+		<br/>
+		<div
+			id = "credly-badge"
+			data-iframe-width="150"
+			data-iframe-height="270"
+			data-share-badge-id="153aeded-485d-4ded-8a71-2df11a5fddac"
+			data-share-badge-host="https://www.credly.com"
+		/>
+		<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+	</div>
 </div>

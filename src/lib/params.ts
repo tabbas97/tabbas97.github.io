@@ -55,10 +55,9 @@ export const HOME: HomePageParams = {
 		"My professional journey is marked by specialized roles in Machine Learning and Computer Vision at Multicoreware Inc. I have a proven track record in enhancing computer vision models, achieving significant efficiency in memory and computational resources. At HuBe.ai, my work involved developing advanced machine learning algorithms for a scalable, high-performance SaaS platform. Proficient in Python, C++, and various machine learning frameworks, I'm adept in both theoretical aspects and practical implementations of machine learning. My experience encompasses working with cloud services like AWS and GCP, making me well-equipped for roles that require deep technical expertise in delivering machine learning and computer vision beyond the confines of on-device compute.",
 	descMultiline: [
 		"Computer Science graduate from Northeastern University with a strong foundation in Machine Learning and Cloud Computing.",
-		"Specialized in Machine Learning and Computer Vision at Multicoreware Inc., enhancing model efficiency.",
-		"Developed advanced machine learning algorithms for HuBe.ai's scalable SaaS platform.",
+		"Solution Architect Associate certified by AWS, also experienced with GCP.",
+		"Developed advanced machine learning algorithms for HuBe.ai's scalable Human Behavioral Analytics platform.",
 		"Proficient in Python, C++, and machine learning frameworks, with a strong grasp of theoretical and practical aspects.",
-		"Experienced with AWS and GCP cloud services, suitable for roles demanding expertise in machine learning and computer vision."
 	],
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/tabbas97' },
